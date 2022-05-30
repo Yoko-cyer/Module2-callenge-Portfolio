@@ -5,48 +5,136 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yoko's Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/helper.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/helpers.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <header>
-    
-    <nav>
-      <ul>
-        <li>About</li>
-        <li>Works</li>
-        <li>Resume</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- nav bar - about works contact -->
-
-  <!-- main -->
+  
   <main>
-
-    <section>
-
-    </section>
+    <!-- nav bar - about works contact -->
+    <header>
+      <h1 class="heading">Yoko's Portfolio</h1>
+      <nav>
+        <ul>
+          <li class="nav-item" id="about">About</li>
+          <li class="nav-item" id="works">Works</li>
+          <li class="nav-item" id="resume">Resume</li>
+          <li class="nav-item" id="contact">Contact</li>
+        </ul>
+      </nav>
+    </header>
 <!-- about -->
-    <article>
+    <article class="about">
+      <h2 class="section-title">About</h2>
+      <br>
+      <img class="self-img" src="./assets/img/yoko_image.jpg" alt="Yoko's image">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In veritatis, fugit voluptates vero deleniti velit error a eaque. Officia, sint quibusdam rerum at veritatis inventore temporibus aut possimus? A, ipsum.</p>
 
     </article>
+    <br>
 <!-- works -->
-    <article>
+    <article class="works">
+      <h2 class="section-title">Works</h2>
+      
+      <section class="section-card">
+
+        <div class="card">        
+          <img class="pokemon" src="./assets/img/pokemon.jpeg" alt="Pokemon" />
+          <div class="container">
+            <h4 class="card-title"><a href="https://github.com/Ausiarm/PokemonCard" >Pokemon App</a></h4>
+            <br>
+            <p>Ruby, Ruby on rails</p>
+            <br>
+            <p>This fun app shows recommended Pokemon depending your answer.</p>
+          </div> 
+        </div>
+        <br>
+        <div class="card">        
+          <img class="food" src="./assets/img/food.jpg" alt="food"/>
+          <div class="container">
+            <h4 class="card-title"><a href="https://github.com/Yoko-cyer/T2A2_Marketplace-app" >Share Your Meals</a></h4>
+            <br>
+            <p>Ruby, Ruby on rails</p>
+            <br>
+            <p>You can share your meals with this app.</p>
+          </div> 
+        </div>
+        <br>
+        <div class="card">        
+          <img src="./assets/img/sushi.jpg" alt="sushi" />
+          <div class="container">
+            <h4 class="card-title"><a href="https://github.com/Yoko-cyer/Yoko-UJihara_T1A3" >Sushi ordering app</a></h4>
+            <br>
+            <p>Ruby</p>
+            <br>
+            <p>This app allows you to order sushi.</p>
+          </div> 
+        </div>
+        <br>
+        <div class="card">        
+          <img src="" alt="" />
+          <div class="container">
+            <p class="card-title"><a href="" >Table order app</a></p>
+            <br>
+            <p>Ruby, Ruby on rails</p>
+            <br>
+            <p>This is the ordering app for takeaway shops.</p>
+          </div> 
+        </div>
+        <br>
+
+      </section>
+
+      
 
     </article>
-
+    <br>
+    
+<!-- resume -->
+    <article>
+      <h2 class="section-title">Resume and links</h2>
+      <p>You can download my resume here.</p>
+      <p>Visit my linkedin and Github page.</p>
+    
+    </article>
+    <br>
 <!-- contact -->
+    <h2 class="section-title">Contact</h2>
+    <form action="/my-handling-form-page" method="post">
+      <ul class="contact-form">
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+        </li>
+        <li>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_email">
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+
+        <li class="button">
+          <button type="submit">Send message</button>
+        </li>
+
+       </ul>
+
+
+    </form>
+
+
+<!-- footer -->
+    <footer>
+      <p>Created by Yoko Ujihara © 2022</p>
+
+    </footer>
     
 
   </main>
 
-  <footer>
-
-  </footer>
   
 </body>
 </html>
